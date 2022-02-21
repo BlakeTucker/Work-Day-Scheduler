@@ -1,5 +1,7 @@
 var currentDay = moment().format("dddd, MMMM Do");
 
+var hour7 = moment().hour(7);
+var hour8 = moment().hour(8);
 var hour9 = moment().hour(9);
 var hour10 = moment().hour(10);
 var hour11 = moment().hour(11);
@@ -10,9 +12,12 @@ var hour15 = moment().hour(15);
 var hour16 = moment().hour(16);
 var hour17 = moment().hour(17);
 var hour18 = moment().hour(18);
+var hour19 = moment().hour(19);
 
-var hours = [hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17];
+var hours = [hour7, hour8, hour9, hour10, hour11, hour12, hour13, hour14, hour15, hour16, hour17, hour18, hour19];
 
+var events7 = JSON.parse(localStorage.getItem('hour7')) || "";
+var events8 = JSON.parse(localStorage.getItem('hour8')) || "";
 var events9 = JSON.parse(localStorage.getItem('hour9')) || "";
 var events10 = JSON.parse(localStorage.getItem('hour10')) || "";
 var events11 = JSON.parse(localStorage.getItem('hour11')) || "";
@@ -22,6 +27,8 @@ var events14 = JSON.parse(localStorage.getItem('hour14')) || "";
 var events15 = JSON.parse(localStorage.getItem('hour15')) || "";
 var events16 = JSON.parse(localStorage.getItem('hour16')) || "";
 var events17 = JSON.parse(localStorage.getItem('hour17')) || "";
+var events18 = JSON.parse(localStorage.getItem('hour18')) || "";
+var events19 = JSON.parse(localStorage.getItem('hour19')) || "";
 
 $.each(hours, function (index, value) {
     events = [events9, events10, events11, events12, events13, events14, events15, events16, events17]
