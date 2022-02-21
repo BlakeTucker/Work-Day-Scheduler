@@ -1,21 +1,22 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 15px;
   line-height: 1;
+  background-color: #000000;
 }
 
 textarea{
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: white;
   padding: 4px 10px;
 }
 
 .jumbotron {
   text-align: center;
   background-color: transparent;
-  color: black;
+  color: rgb(0, 128, 255);
   border-radius: 0;
   border-bottom: 10px solid black;
 }
@@ -31,19 +32,19 @@ ul.event-group {
 
 .time-block{
   text-align: center;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 1.5px solid white;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  background-color: black;
+  color: white;
+  border-top: 1px dashed white;
   padding-top: 15px;
 }
 
@@ -53,29 +54,29 @@ ul.event-group {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: maroon;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: greenyellow;
   color: white;
 }
 
 .save-delete {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: white;
+  color: black;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 23px;
 }
 .save-delete i.fa-save{
-  font-size: 30px;
+  font-size: 27px;
 }
 .save-delete i.fa-save:hover {
-  font-size: 30px;
+  font-size: 27px;
   color: #000000;
   transition: all .3s ease-in-out;
 }
@@ -85,7 +86,7 @@ ul.event-group {
 }
 .save-delete i.fa-trash:hover {
   font-size: 18px;
-  color: #ff0000b9;
+  color: lightskyblue;
   transition: all .5s ease-in-out;
 }
 .event-group{
